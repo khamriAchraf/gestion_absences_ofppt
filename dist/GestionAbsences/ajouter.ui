@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ajouter des Etudiants</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ajouter des Etudiants</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>350</y>
+     <width>195</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="ok">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ajouter</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="end">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Terminer</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="result">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Etudiant ajouté !</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>609</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="niveauLabel_2">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Niveau   </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="niveauLabel">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Groupe</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="niveauLabel_3">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Filière</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="niveauLabel_4">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Année étude</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="niveauLabel_5">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Numéro stagiaire</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="numero"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="niveauLabel_6">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>CIN</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="niveauLabel_7">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="niveauLabel_8">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Prénom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="cin"/>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="nom"/>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="prenom"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="groupe">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>M101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MA101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MA102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MA103</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MA104</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MA105</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PS101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PS102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PV101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PV102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EB101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EB102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EB103</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EB104</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EB106</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ATV201</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ATV202</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ATV203</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CCTP101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CCTP201</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TDB101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TDB102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TDB201</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TDB202</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TDB203</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AA101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AA102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AA103</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AA104</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGE201</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGE202</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGE203</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGE204</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSCTTP101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSCTTP102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSCTTP201</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSCTTP202</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSCTTP203</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGO101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGO102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGO103</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGO104</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGO201</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGO202</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGT101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGT102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGT201</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGT202</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TSGT203</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GE101</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GE102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GE103</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GE104</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GE105</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GE106</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GE107</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="filiere">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Agent Technique de Vente (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Assistant Administratif (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chef de Chantiers Travaux Publics (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chef de Chantiers Travaux Publics (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Développement Digital (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Electricité de Bâtiment (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gestion des Entreprises (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Infrastructure Digitale (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Menuiserie (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Menuiserie Aluminium (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Peintre Vitrier (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Plomberie Sanitaire (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Comptable d'Entreprises (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Dessinateur de Bâtiment (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Dessinateur de Bâtiment (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé Conducteur de Travaux : Travaux Publics (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé Conducteur de Travaux : Travaux Publics (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé en Commerce (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé en Finance et Comptabilité (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé en Gestion des Entreprises (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé Géomètre Topographe (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé Géomètre Topographe (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé Gros Oeuvres (1A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien Spécialisé Gros Oeuvres (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Techniques de Développement Informatique (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Techniques de Secrétariat de Direction (2A)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Techniques des Réseaux Informatiques (2A)</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="niveau">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Technicien</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Technicien spécialisé</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="annee">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding-left:10px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>1ère année</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2ème année</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
